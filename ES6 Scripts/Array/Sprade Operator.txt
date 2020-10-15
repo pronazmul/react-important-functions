@@ -1,0 +1,23 @@
+
+
+        const ages = [12,32,43,54];
+        const ages1 = [10,20,30];
+
+        //Concate Two or more Array Elements in Old Js Format...
+        const addArray= ages.concat([333]).concat(ages1);
+
+        //Concate Two or More array Elemets Using Sparade Operator...
+        const addMore = [...ages,777,...ages1];
+
+    //Declare Maxium Numbers of An Array....
+        const numbers = [100,399,499,599,999];
+
+        const maxium = Math.max(...numbers);
+        console.log(maxium);
+
+
+    //Declare Minimum Numbers of An Array....
+        const numbers = [100,399,499,599,999];
+
+        const minimum = Math.min(...numbers);
+        console.log(minimum);

@@ -1,0 +1,57 @@
+	
+Pass Object From App.js: 
+
+
+function App() {
+  const products =[
+    {name:'Photoshop',price:'$200'},
+    {name:'Elistater', price:'$100'},
+    {name:'Premire Pro', price:'$100'}
+  ]
+  return (
+    <div className="App">
+      
+        <ObjectPass product ={products[0]}></ObjectPass>
+        <ObjectPass product ={products[1]}></ObjectPass>
+        <ObjectPass product ={products[2]}></ObjectPass>
+
+		//Pass All the Objects in Single Line using Map....
+		{Products.map(product => <ObjectPass product ={product}></ObjectPass>)}
+    </div>  
+  );
+}
+
+Implement to Component: 
+
+import React from 'react'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+const ObjectPass = (props) =>{
+
+        return(
+                <div>
+			<h2 className="card-title text-center"> {props.product.name}</h2>
+                        <h4 className="text-center">{props.product.price}</h4>
+                </div>
+        )
+}
+
+export default ObjectPass
+
+Implement to Component By Destructure: 
+import React from 'react'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+const ObjectPass = (props) =>{
+// Destructure Object 
+const {name, price} =props.product
+
+        return(
+                <div>
+			<h2 className="card-title text-center"> {name}</h2>
+                        <h4 className="text-center">{price}</h4>
+                </div>
+        )
+}
+
+export default ObjectPass

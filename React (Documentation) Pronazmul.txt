@@ -1,0 +1,214 @@
+How React Works: 
+	When ever you changed something inside your component react usderstand (using Diff Algorithem) exactly where should be minimum changed,
+	Work specific with that location (using virtual DOM) Then (minimum render) that Component. (Diff Algorithem, Virtual Dom, Reconigation, Minimum Rander).
+
+Prject Installation Command: 
+	* installation: npx create-react-app practice
+	* Change Directory: cd practice
+	* Run Application: npm start
+Informations About React: 
+	* JSX ( JavaScript XML): JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.. 
+	* Note That : Every Tag has Closing Tag (img, hr, br, input). 
+Add JSX React Emmet in VS Code: 
+	* vs_code -> file -> preference -> setting -> search (emmet) -> settings.json:
+	* Paste this code in emmet json settings: "emmet.includeLanguages": {"javascript": "javascriptreact"}
+Add Required Plugins: 
+	* Ract Extension Pack.
+	* Auto Import.
+	* Ract Extension Pack.
+React Extion Pack Commands: 
+	* rcc -> Class Component Structure Command
+	* rsf -> Function Component with Props Structure Command
+	* rsc -> Arrow Fucntional Component Structure Command
+	* Pick All Command From React Js Code Snipped
+
+Auto Import Extension: 
+	* <componentName -> Tab (in your App .js Component will Imported Automatically)
+
+Component Management: 
+	* Make Component Folder.
+	* Import React from 'react'
+	* Make Method JavaScript Procedural Function.
+	* Export default methodName.  
+
+Class Management: 
+	* Make Component Folder.
+	* Import React,{Component} from 'react'
+	* Make Class JavaScript Procedural Function.
+	* use render() method inside class{}
+	* Export default ClassName. 
+
+Uses of Porps: 
+	* Assigning Values.
+	* Reuse of component with Custom Values.
+	* Pass Value to Componente as Tag Attribute.
+	* Receive values to component as props.
+	* Use values as {porps.name}.
+
+Function Return Condition: 
+	* use Pranthesis whenever return JSX. eg: return(<h1>Hello</h1>)
+	* A Single Function Can return a single value, when your wanna sent number of values packed in a div.
+
+
+	
+Functional Component: 
+	* Make Normal Fucntion
+	* Create Div in JSX Format & Create Button inside it.
+	* Add onClick in Camel Case.
+	* Use Function in onClick attribute {functionName}
+
+
+Class Component: 
+	* Make Function Except writting function.
+	* Create Div in JSX Format & Create Button inside it.
+	* Add onClick in Camel Case.
+	* Use Function in onClick attribute {this.functionName}
+
+Argument Pass by Onclick Function Parameter: 
+	* Use Function in onClick attribute {this.functionName.bind(this,'I am from param....')}
+	* Use Parameter like Procedural JS Method.
+
+
+Install Bootstrap in React FrameWork: 
+	* Installation Command: npm install --save bootstrap
+	* import bootstrap in app.js or index.js: '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+	* Input CDN: index.html
+	* bootstrap Class: React (className).
+
+Install React Fontawesome: 
+	* Installation Command: 
+				npm i --save @fortawesome/fontawesome-svg-core
+				npm install --save @fortawesome/free-solid-svg-icons
+				npm install --save @fortawesome/react-fontawesome
+	* Use in Component: 
+				import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+				import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+				const element = <FontAwesomeIcon icon={faCoffee} />
+	* Use in App.js: 
+				import { library } from '@fortawesome/fontawesome-svg-core'
+				import { fab } from '@fortawesome/free-brands-svg-icons'
+				import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+Custom Css: 
+	* Style porperty name sould be in camel Case.
+	* Inline: <h1 style={{backgroundColor:'red'}}>Welcome Porgrammer</h1>
+	* Internal: 
+			set varriable: var style = {color:'red'}
+			set style: <h1 style={style}>Welcome Porgrammer</h1>
+	* External: 
+			import './index.css';
+	* CSS module: 
+			Create File { myStyle.module.css}
+			import styles from './myStyle.module.css'
+			<h1 className={styles.customStyle}
+
+Uses of Map: 
+
+	* What: Array.map Just Runs on array to give each element of that array, array may be Store of values or
+	  jsonObject.
+	* Note: Pass an Extra Unique param (like id) to skip warning. 
+	* example: 
+		let arrayOfObject= [
+					{name:'Nazmul',profession:'programmer'},
+					{name:'Sania',profession:'Frontend'},
+					{name:'Billal',profession:'Designer'},
+					{name:'Roxi',profession:'Doctor'}
+				   ]
+		let namesOfArrayObject = arrayOfObject.map(person => person.name)
+
+React Hook (useState): 
+	* It's a Method of a class.
+	* Whenever wanna use inside a funtional component auto import with react.
+	* Structure: 
+			const [count, setCount] = useState(initial value)
+	* first one is constant name, second one is function to set state. 
+			
+
+
+React Hook (useEffect): 
+	* It's a Method of a class.
+	* Whenever wanna use inside a funtional component auto import with react.
+	* Structure: 
+			useEffect(()=>{}, [])
+	* First Param is a function And Second One is Empty array to rander use effects once only.
+
+React Warning (Each Chield in a list should hava a unique key (prop)): 
+	* Set a property named key={} and set a unique value to that key to remove that warning.
+
+
+Conditional Return in Ract: 
+	* if else condition don't work in return() block()
+	* Element Varriable Return or inline if else condition (Works inside return Block)
+	* Structure: condition ? true : false	
+
+
+React Dom (Render & Hydrate): 
+	* Why: To Change Document Element & Set another element to a container. 
+	* Structure: ReactDOM.render(element, container, callBack)
+	* Element: What you wanna emplement newly. 
+	* Container: Where you wanna Set.
+	* CallBack: This will happend After change element.
+	* Render() Mehtod And hydrate() works Same. 
+
+React Form Handleing: 
+	* Use onChange() in input tag.
+	* Make a arrow function to handle form data.
+	* get data by {event.target.value} set event arrow function param.
+	* Use this.state {} to set form data and use. 			
+
+
+React Routing: 
+	* why: React Js is mainly used or developing single page appplication (SPA).
+	* Installation Commands: 
+		For Web : npm install react-router-dom --save
+		For Mobile: npm install react-router-native --save
+
+	* Step: 1 (Make Some Componet First)
+	* Step: 2 Implement pages & Ract Route in {index.js}:
+
+                  import App from './App';
+                  import About from './components/About';
+                  import Contract from './components/Contract';
+                  import Service from './components/Service';
+		  import { Route, Link, BrowserRouter as Router } from '../node_modules/react-router-dom';		
+	
+	* Make Routing and Navigation in index.js:
+                      
+		const myRouter=(
+                        <Router>
+                            <div>
+                              <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                                          <a className="navbar-brand" href="/">Ract Basic Routing</a>
+                                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                              <span className="navbar-toggler-icon"></span>
+                                            </button>
+                                          <div className="collapse navbar-collapse ml-auto" id="navbarNav">
+                                        <ul className="navbar-nav d-block ml-auto d-flex pr-4">
+                                          <li className="nav-item"><Link className='nav-link' to='/'>Home</Link></li>
+                                          <li className="nav-item"><Link className='nav-link' to='/about'>About</Link></li>
+                                          <li className="nav-item"><Link className='nav-link' to='/contract'>Contract</Link></li>
+                                          <li className="nav-item"><Link className='nav-link' to='/service'>Service</Link></li>
+                                      </ul>
+                                </div>
+                              </nav>
+                                <Route exact path='/' component={App} />
+                                <Route path='/about' component={About} />
+                                <Route path='/contract' component={Contract} />
+                                <Route path='/service' component={Service} />
+                            </div>
+                        </Router>
+                      )
+
+
+	* Finally initiate Constant in ReactDOM.render():	
+                    
+  ReactDOM.render(
+                        myRouter,
+                        document.getElementById('root')
+                      );
+
+
+**Fragment:     Why: to Skip Extra div fragment uses
+		* Empty: <> </>
+		* Class: <React.Fragment></React.Fragment>

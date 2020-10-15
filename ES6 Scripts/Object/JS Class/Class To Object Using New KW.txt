@@ -1,0 +1,17 @@
+
+// Make Class to Object Using New Kw 
+
+class Student{
+   constructor(firstName,lastName,email,phone){
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.email = email;
+      this.phone = phone;
+   }
+}
+const object = new Student("Nazmul", "Huda", "ProNazmul@Gmail.com", 30492823049);
+
+console.log(object);
+
+
+Use Class to set same Porperty in many object.....

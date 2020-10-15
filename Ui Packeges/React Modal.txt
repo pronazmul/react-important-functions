@@ -1,0 +1,31 @@
+Insallation Command: npm install react-bootstrap4-modal
+
+Syntax
+
+                import React, { useState } from 'react';
+                import Modal from 'react-bootstrap4-modal';
+
+                const ModalForm = () => {
+                    const [modalState, setModalState] =useState(false)
+                    return (
+                        <>
+                            <button onClick={() => setModalState(true)} className='btn btn-success'>Modal Open Button</button>
+                            <Modal visible={modalState} onClickBackdrop={() => setModalState(false)}>
+                                <div className="modal-header">
+                                    <h5 className="modal-title">This Is Modal Header</h5>
+                                </div>
+                                <div className="modal-body">
+                                    <p>This Is Modal Body</p>
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" >Yes</button>
+                                    <button type="button" className="btn btn-danger" onClick={() => setModalState(false)} >Close</button>
+                                </div>
+                            </Modal>
+                        </>
+                    );
+                };
+
+
+
+                export default ModalForm;

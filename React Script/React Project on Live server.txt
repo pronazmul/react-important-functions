@@ -1,0 +1,4 @@
+
+Project Build command: npm run build
+
+Then Build Folder set your Hosting File Manager

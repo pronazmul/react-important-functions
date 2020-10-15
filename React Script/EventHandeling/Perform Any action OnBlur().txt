@@ -1,0 +1,3 @@
+
+
+<button onBlur={()=>getAlert('Hello I am from param')}ClassAlert</button>

@@ -1,0 +1,24 @@
+* Create Contex Api, Create Conponent Network, Set Contex value: 
+	1 Set Contex & Export: export  const contexApi = createContext()
+	2 Declare A State: const [count, setCount] = useState(0)
+	3 Create Contex Api Provider Area & Pass State: 
+	Syntax: 
+                <contexApi.Provider value={[count, setCount]}>
+                	<p>Value is: {count}</p>
+                	<Chield></Chield>
+                </contexApi.Provider>
+	
+Reminder: You Can Pass Hard Coaded Value, {Dynamic Value}, Array in ContexApi value;
+
+* Use useContex() Hooks & Access Value: 
+
+	1 Declare useContex(): const data = useContext(contexApi)
+	2 Use Data: <h1>value is: {data}</h1
+	3 Update Data: 
+	Syntex: 
+
+ 		Descructure: const [count, setCount] = useContext(contexApi)
+
+		<button onClick={()=>setCount(count + 1)} className='btn btn-success'>Increase Value</button>
+            
+	

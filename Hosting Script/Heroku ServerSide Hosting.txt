@@ -1,0 +1,38 @@
+				Node Application On Heroku
+
+Go to Heroku & Create Free Acc: 
+mhnazmul48@gmail | Murubbi1@
+
+_> I am Ready To Start
+_> Download & Install Heroku CLI & Restert Your PC
+_> Check Version: heroku --version
+_>CMD: heroku login  {i have installed heroku cli}
+_>Note: insure your application Successfully Pushed on Github
+_>CMD: heroku create
+_>CMD: git push heroku master
+
+Fix Errors: 
+
+	i) Node Start:  {Package.json}
+		Script: 
+			'start':'node index.js',
+			'start:dev':'nodemon index.js'
+	i) Port Setup: 	
+			app.listen(process.env.PORT || PORT)
+
+	i) Setup Env: Setting > Config Vars > key & Value Setup.
+
+Update: 
+
+	* Cmd: git add .
+	* Cmd: git commit -m "Messege Here"
+	* Cmd: git push
+	* Cmd: git push heroku master
+
+
+		
+
+
+
+
+

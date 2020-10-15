@@ -1,0 +1,75 @@
+
+Bind Method: Bind Method Retun A Object.
+Call Method: Pass Object & Value inside Call Method.
+Apply Mehod: Pass Object & Array inside Apply method.
+
+
+Example Bind Method:
+
+   const nazmulData = {
+         name: "Nazmul Hdua",
+         age: 25,
+         salery: 50000,
+         tax: function(reduce){
+            this.salery = this.salery-reduce;
+            return this.salery;
+         }
+      }
+      const bilredData = {
+         name: "Billal Hossain",
+         age: 25,
+         salery: 1000
+      }
+
+   const bilredReduce = nazmulData.tax.bind(bilredData);
+
+   bilredReduce(500);
+
+   nazmulData.tax(5000);
+   console.log(nazmulData.salery);
+   console.log(bilredData.salery);
+
+
+Example Call Method: 
+      const nazmulData = {
+         name: "Nazmul Hdua",
+         age: 25,
+         salery: 50000,
+         tax: function(reduce){
+            this.salery = this.salery-reduce;
+            return this.salery;
+         }
+      }
+      const bilredData = {
+         name: "Billal Hossain",
+         age: 25,
+         salery: 1000
+      }
+
+   nazmulData.tax.call(bilredData, 200);
+
+   console.log(nazmulData.salery);
+   console.log(bilredData.salery);
+
+
+Example Apply Method: 
+      const nazmulData = {
+         name: "Nazmul Hdua",
+         age: 25,
+         salery: 50000,
+         tax: function(reduce, tiffin){
+            this.salery = this.salery-reduce-tiffin;
+            return this.salery;
+         }
+      }
+      const bilredData = {
+         name: "Billal Hossain",
+         age: 25,
+         salery: 1000
+      }
+
+   nazmulData.tax.apply(bilredData, [100,200]);
+
+   console.log(nazmulData.salery);
+   console.log(bilredData.salery);
+

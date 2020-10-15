@@ -1,0 +1,6 @@
+
+
+        const names = ['Nazmul Huda','Roxi Mamma', 'Muhammod Ali', 'Jubayer']
+        for( single of names){
+        console.log(single)
+        }

@@ -1,0 +1,17 @@
+		
+
+Regular Experession: 
+
+//Only UpperCase Or LowerCase Are Allowed && Length Sould be 2 to 10.
+namePattern =/^([a-zA-Z]){2,10}$/;
+
+//Firstly need Char then need @ & then period(.) at last char
+emailPattern = /\S+@\S+\.\S+/;
+
+//Check input Value is number or not...
+numberPattern = !Number(inputValue);
+
+//Check input passoerd has {at least 1 numaric value, 1 UpperCase Value, 1 Special Char, Lowercase value && Length Should be 6 to 12....
+PWD Pattern = /^(?=.*[0-9])(?=(?:[^A-Z]*[A-Z]){1})(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,12}$/;
+
+

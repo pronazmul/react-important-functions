@@ -1,0 +1,6 @@
+ 
+
+let nazmul = function(name){
+     return name;
+ }
+ console.log(nazmul('love you sania'))

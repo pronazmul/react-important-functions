@@ -1,0 +1,25 @@
+
+Install Axiox in React: 
+	* Installation Command: npm install axios.
+ 
+Simple Axios Get Request Syntax: 
+				axios.get('/user')
+				.then(function (response) {
+					console.log(response.data / response.status);
+				})
+				.catch(function (error) {
+					console.log(error);
+				})
+
+Axios Post Request: 
+
+				axios.post('/user', {
+					firstName: 'Fred',
+					lastName: 'Flintstone'
+				})
+				.then(function (response) {
+					console.log(response);
+				})
+				.catch(function (error) {
+					console.log(error);
+				});

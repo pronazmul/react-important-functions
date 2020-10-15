@@ -1,0 +1,11 @@
+
+// rest parameter.....
+
+function sum(...numbers){
+    let sum = 0;
+    for(i of numbers){
+        sum = sum + i;
+    }
+    console.log(sum);
+}
+sum(10, 20, 30);

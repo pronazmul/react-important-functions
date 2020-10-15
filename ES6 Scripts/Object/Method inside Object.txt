@@ -1,0 +1,13 @@
+   
+
+const objectData = {
+      name: "Nazmul Hdua",
+      age: 25,
+      salery: 50000,
+      tax: function(reduce){
+         this.salery = this.salery-reduce;
+         return this.salery;
+      }
+   }
+   objectData.tax(5000);
+   console.log(objectData.salery);

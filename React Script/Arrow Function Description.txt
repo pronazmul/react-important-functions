@@ -1,0 +1,14 @@
+
+Arrow Function Auto Return When Write a Single element on Single line without Qurly Brace.
+
+   	const doubleIt = number => number*2;
+
+ 
+Arrow Function Return with retun() method When Write multiple element with Qurly Brace.
+
+    	const doMath   = (number1, number2)=>{
+        			const deductIt = number1 - number2;
+     				const result = deductIt*number1;
+        			return result;
+						}
+

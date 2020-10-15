@@ -1,0 +1,10 @@
+
+
+
+Why Array Reduce: To calculate a Specific Of an array object.
+
+Structure: 
+	const total = cart.reduce((total,data)=> total + data.price,0)
+
+Array Reduce Works something Like Map it Catch each Objects of an array
+And Calculate Values. 

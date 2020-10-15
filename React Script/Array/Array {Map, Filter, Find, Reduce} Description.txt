@@ -1,0 +1,13 @@
+
+const array =[12, 13, 45, 56, 78, 67]
+
+array.map(element =>element*2)
+array.filter(element =>element >15)
+array.find(element => element >13)
+array.reduce((initial, element)=> initial + element, 0)
+
+Array Map: The map() method creates a new array with the results of each array element.
+Array Filter: The filter() method creates an array with all elements those function return true.
+Array Find: If it finds an array element where the function returns a true value.
+Array Reduce: Reduce() method executes a provided function for each value of the array (from left-to-right).
+	      Return a Single value of the function and stored in an accumulator.

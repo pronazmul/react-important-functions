@@ -1,0 +1,18 @@
+   const objectData = {
+      name: "Nazmul Hdua",
+      age: 25,
+      skills:["JS","REACT","NATIVE","PHP","LARAVEL","SQL"],
+      friends:{
+         name:"Rashedul Alam",
+         profession:"Mediacal Sergon",
+         age:25
+      }
+   }
+
+   const jsonData = JSON.stringify(objectData);
+
+   const returnObject = JSON.parse(jsonData);
+
+   console.log(returnObject.skills[2]);
+
+   console.log(returnObject.friends.profession);

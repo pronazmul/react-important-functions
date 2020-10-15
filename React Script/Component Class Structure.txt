@@ -1,0 +1,17 @@
+
+Componet Class Default Format: 
+
+import React,{Component} from 'react'
+	class Welcome extends Component{
+   		 render(){
+        		return (<h1>Greetings From Class</h1>)
+    		}
+	}
+export default Welcome
+
+Use Class inside App.js: 
+	
+	import Welcome from './component/Welcome'
+	<Welcome></Welcome>
+
+

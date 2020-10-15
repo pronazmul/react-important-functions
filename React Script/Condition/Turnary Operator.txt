@@ -1,0 +1,18 @@
+
+...Turnary Operator works in return Block()......
+
+Conditional Return in Ract: 
+	* if else condition don't work in return() block()
+	* Element Varriable Return or inline if else condition (Works inside return Block)
+	* Structure: condition ? true : false	
+
+
+Conditional Button: 
+
+      {
+        //Conditional Button Shown....
+        user.isSignIn ?
+        <button onClick={handleSignOut}>Sign Out</button>:
+        <button onClick={handleSignIn}>Sign in with Google</button>
+      }
+

@@ -1,0 +1,89 @@
+							Start With React
+
+Prject Installation Command: 
+	* installation: npx create-react-app practice
+	* Change Directory: cd practice
+	* Run Application: npm start
+
+Install Normal Bootstrap in React FrameWork: 
+	* Installation Command: npm install --save bootstrap
+	* import bootstrap app.js or index.js: import 'bootstrap/dist/css/bootstrap.css'
+	* Input CDN: index.html
+	* bootstrap Class: React (className)
+
+Install React Fontawesome: 
+	* Installation Command: 
+				npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+	*Brand Icons	: 	npm install --save @fortawesome/free-brands-svg-icons @fortawesome/free-brands-svg-icons
+
+	* Use in Component: 
+				import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+				import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+				import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+
+
+				const element = <FontAwesomeIcon icon={faCoffee} />
+	* Use in App.js: 
+				import { library } from '@fortawesome/fontawesome-svg-core'
+				import { fab } from '@fortawesome/free-brands-svg-icons'
+				import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+Custom Css: 
+	* Style porperty name sould be in camel Case.
+	* Inline: <h1 style={{backgroundColor:'red'}}>Welcome Porgrammer</h1>
+	* Internal: 
+			set varriable: var style = {color:'red'}
+			set style: <h1 style={style}>Welcome Porgrammer</h1>
+	* External: 
+			import './index.css';
+	* CSS module: 
+			Create File { myStyle.module.css}
+			import styles from './myStyle.module.css'
+			<h1 className={styles.customStyle}
+
+React Routing: 
+	* why: React Js is mainly used or developing single page appplication (SPA).
+	* Installation Commands: 
+		For Web : npm install react-router-dom --save
+
+Basic Routing: 
+
+	* Step: 1 (Make Some Componet First)
+	* Step: 2 Import Ract Route in {app.js}:
+                import {
+                  BrowserRouter as Router,
+                  Switch,
+                  Route,
+                  Link
+                } from "react-router-dom";		
+	
+	* Make Routing and Navigation in index.js:
+ 
+            <loginContexApi.Provider value={[loginUser, setLoginUser]}>
+              <Router>
+                <Switch>
+                      <Route exact path='/'>
+                        <Home></Home>
+                      </Route>
+
+                      <PrivateRoute path='/resister'>
+                        <ResisterEvent></ResisterEvent>
+                      </PrivateRoute>
+
+                      <Route path='*'>
+                        <Redirect to="/" />
+                      </Route>
+                  </Switch>
+              </Router>
+            </loginContexApi.Provider>
+
+## Set Page title Dynamically: 
+	documnet.title='Login Page'
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+ 
+
+   //Privious Style Function......
+   	 function sum(number1,number2){
+      		  return number1+number2;
+   	 }
+    
+   	 const sum = function(number1, number2){
+       		 return number1 + number2;
+   	 }
+
+    //Modern Style Function used in ES6.....
+
+    	const doubleIt = number => number*2; 
+   	const sumIt    = (number1,number2) => number1+number2;
+   	const get5     = () => 5;
+    	const doMath   = (number1, number2)=>{
+        			const deductIt = number1 - number2;
+     				const result = deductIt*number1;
+        			return result;
+
+    	}

@@ -1,0 +1,5 @@
+	
+
+	source 1: d3 chart (midium complex)
+	source 2: nvd3 chart (easy to use)
+	source 3: chart.js (modern)

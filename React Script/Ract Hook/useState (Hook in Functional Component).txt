@@ -1,0 +1,41 @@
+
+Why: useState is a Hook (function) that allows you to have state variables in functional components.
+You pass the initial state to this function, and it returns a variable with the current state value 
+(not necessarily the initial state) and another function to update this value.
+
+
+import React,{useState} from 'react'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+function StateComponent(){
+
+    const [count, getCount] = useState(10)
+
+    return(
+        <div className='jumbotron'>
+            <h2>Count: {count}</h2>
+            <button className='btn btn-danger mr-3' onClick={()=>getCount(count-1)}>Decrease</button>
+            <button className='btn btn-success' onClick={()=>getCount(count+1)}>Increase</button>
+        </div>
+    )
+
+}
+export default StateComponent
+
+
+
+Store Object In State :
+    const [user, setUser] = useState({
+        userName: '',
+        email: '',
+        password: '',
+        success: false,
+        error: ''
+    })
+
+**Update Object in State.....
+
+                    let newUser = { ...user }
+                    newUser.success = true
+                    newUser.error = ''
+                    setUser(newUser)

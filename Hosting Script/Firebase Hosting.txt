@@ -1,0 +1,36 @@
+				React Application Host on Firebase
+
+Install cmd:  npm install -g firebase-tools
+Login cmd: firebase login
+init Cmd: firebase init
+
+Ready to proceed (Y/N) y
+ 
+Hosting: Configure and deploy firebase hosting (arrow up down & space select enter run)
+
+Project: use an existing project
+
+What you wanna use as public dir: build      
+
+Configure as a single page app (y/n) y
+
+Wanna overwrite index.html inside build   (Y/N) N
+
+Cmd: npm run build
+
+cmd: firebase deploy
+
+Update & deploy:     npm run build & firebase deploy
+
+Check updates: npm server
+
+##Firebase Deploy complete but website not shown
+
+firebase deploy --only hosting
+
+	Then, in the firebase.json file, I changed:
+		"public": "build/index.html",
+
+
+
+

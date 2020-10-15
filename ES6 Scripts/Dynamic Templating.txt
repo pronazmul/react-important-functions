@@ -1,0 +1,5 @@
+		
+
+	showLyricItem.innerHTML += `<pre class="lyric text-white">${lyric}</pre>`;
+	
+	

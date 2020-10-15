@@ -1,0 +1,12 @@
+      
+      const students = {
+            name: "Nazmul Huda",
+            profession: "programmer",
+            skills:{
+                html:"hyper Text Markup Language",
+                Css: "casiding Syple Sheet"
+            },
+            friends:['Roxi','Sarif']
+        }
+        console.log(students.skills.html)
+        console.log(students.friends[1])y);

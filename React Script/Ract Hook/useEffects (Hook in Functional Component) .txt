@@ -1,0 +1,29 @@
+Why: 		By using this Hook, you tell React that your component needs to do something after render.
+
+Structure:	Pass 2 values in useEffect ( arrow function & Dependencies)\
+
+Dependencies: 	You can use a State inside dependencies inside array, effects will run when the dependencies state will be changed.
+		you can send empty array to call effect on first time render.  
+
+
+import React, { useState, useEffect } from 'react'
+
+const EffectsComponent = () =>{
+const [users, setUser] = useState([])
+
+useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res=> res.json())
+    .then(data => setUser(data))
+}, [])
+
+return(
+    <div>
+        <ul>
+            {users.map(users=><li>{users.name}</li>)}
+        </ul>
+    </div>
+)
+}
+
+export default EffectsComponent

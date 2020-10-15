@@ -1,0 +1,46 @@
+
+Create Application:....
+
+	Create a Project Using Readable Name_>
+	By Default Turn on Google Analytics, Don't need you may turn off_>
+	Create Project _>
+	Get started by adding Firebase to your app_> Web App...
+	Check (Also Setup FireBase Hosting on your App) _>
+	Next next next continue to console_>
+
+SetUp Sign in Methods: .......
+
+	Console_> Authentication _>
+	Setup Sign in Method--->
+
+Enable Google: 
+	Project Public-facing name
+	Project Support Email...
+
+Safelist Client IDs From External Project: 
+	Add Site Address here, If you wanna access Data Outside From this Project.
+
+WEb SDK Configuration May Check:
+	Web Client ID && Web Client Secret (Secret Things)
+
+Porject General Settings: 
+	Project Setting_> Project Setting_>
+	May Check Project ID, API KEY
+
+FireBase SDK Snipped {Config}: 
+	Copy & Peste to your Project.
+
+
+InStall FireBase on your Project: 
+	Install Firebase: npm install --save firebase
+
+Import Files: 
+	import * as firebase from "firebase/app";
+	import "firebase/auth
+
+	
+Initialize firebase (Outside Method): 
+	firebase.initializeApp(firebaseConfig)
+
+	
+

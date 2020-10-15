@@ -1,0 +1,18 @@
+Defination: 	The localStorage and sessionStorage properties allow to save key/value pairs in a web browser. 
+		The sessionStorage object stores data for only one session (the data is deleted when the 
+		browser tab is closed) On the other hand local storage data will not be deleted when the 
+		browser is closed, and will be available the next day, week, or year.
+
+How: 		When the value is single you can pass str, int, bool etc. But when the value is object 
+		you must have to {JSON.stringify(obj)} it. When you use this obj {JSON.parse(stirng)} it. 
+
+Set value: 	localStorage/sessionStorage.setItem('id', JSON.stringify(obj))
+
+Get Value: 	localStorage/sessionStorage.getItem('id')
+
+Remove Value: 	localStorage/sessionStorage.removeItem('id');
+
+
+		
+		
+

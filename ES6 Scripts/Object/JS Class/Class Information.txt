@@ -1,0 +1,15 @@
+
+	Why Class: Use Class to set same Porperty in many object.
+	
+	Constructor Method Vs Normal Method:
+						# Constractor Self Called But Normal Method Not.
+						# Normal Method Can Retrun Constructor NOt.
+						# this.var can be used anywhere inside Class.
+
+	Static Vs Non Static:
+						# When Static you can call method usnig class eg: class.method
+						# Without Static First you have to make object then called method.
+
+
+	Why Super keword: To use Parent Class Property or Method Super keyword used. 
+						# Eg: super.parentMethod();

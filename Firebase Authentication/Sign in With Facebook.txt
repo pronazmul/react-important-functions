@@ -1,0 +1,45 @@
+.................FaceBook Sign in Authentication With FireBase...................
+InStall FireBase on your Project: 
+	Install Firebase: npm install --save firebase
+
+Import Files: 
+	import * as firebase from "firebase/app";
+	import "firebase/auth
+
+Sign in Method:  
+	Firebase Console _> Authentication _> Sign in Method _> FaceBook Sign in 
+
+App Id & Secret: 
+	developers.facebook.com_> Create App For WEb _> Setting _> Basic _> Id & Secret
+
+Set App Id & Secret in Firebase:
+	You Must have to put app id & secret while enabling facebook sign in & genereate site redirect url.
+
+Set site Redirect Url in facebook:
+	Products -> Facebook sign in -> Setup Sign in-> put url...... && save
+
+Initialize firebase (Outside Method): 
+	firebase.initializeApp(firebaseConfig)
+
+Add Provider (inside Method):
+  	const provider = new firebase.auth.FacebookAuthProvider();
+
+Sign in With FaceBook Provider: 
+  const handleSignIn =()=>{
+    firebase.auth().signInWithPopup(provider)
+    .then(res=> console.log(res))
+    .catch(error=> colsole.log(error))
+
+Sign Out From FaceBook:
+   const handleSignOut = () => {
+    firebase.auth().signOut()
+    .then(res => )
+    .catch(error =>)
+
+
+
+
+
+
+
+

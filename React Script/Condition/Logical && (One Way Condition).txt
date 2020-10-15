@@ -1,0 +1,19 @@
+
+...Turnary Operator works in return Block()......
+
+Conditional Return in Ract: 
+	* if else condition don't work in return() block()
+	* Structure: { condition && true }
+		
+
+Conditional Div: 
+
+      {
+        //conditional User information Division Shown...
+        user.isSignIn && 
+                      <div>
+                        <h1>Welcome {user.name}</h1>
+                        <p>Email: {user.email}</p>
+                        <img src={user.photo} alt=''/>
+                      </div>
+      }

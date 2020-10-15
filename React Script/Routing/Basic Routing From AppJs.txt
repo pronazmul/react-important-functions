@@ -1,0 +1,52 @@
+React Routing: 
+	* why: React Js is mainly used or developing single page appplication (SPA).
+	* Installation Commands: 
+		For Web : npm install react-router-dom --save
+		For Mobile: npm install react-router-native --save
+
+Basic Routing: 
+
+	* Step: 1 (Make Some Componet First)
+	* Step: 2 Import Ract Route in {app.js}:
+                import {
+                  BrowserRouter as Router,
+                  Switch,
+                  Route,
+                  Link
+                } from "react-router-dom";		
+	
+	* Make Routing and Navigation in index.js:
+ 
+            <loginContexApi.Provider value={[loginUser, setLoginUser]}>
+              <Router>
+                <Switch>
+                      <Route exact path='/'>
+                        <Home></Home>
+                      </Route>
+
+                      <Route path='/login'>
+                        <Login></Login>
+                      </Route>
+
+                      <PrivateRoute path='/resister'>
+                        <ResisterEvent></ResisterEvent>
+                      </PrivateRoute>
+
+                      <Route path='/tasks'>
+                        <EventTasks></EventTasks>
+                      </Route>
+
+                      <Route path='/adminDashboard'>
+                        <AdminDashboard></AdminDashboard>
+                      </Route>
+
+                      <Route path='/adminAddEvent'>
+                        <AdminAddEvent></AdminAddEvent>
+                      </Route>
+
+                      <Route path='*'>
+                        <Redirect to="/" />
+                      </Route>
+                  </Switch>
+              </Router>
+            </loginContexApi.Provider>

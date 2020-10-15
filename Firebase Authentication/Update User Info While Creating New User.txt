@@ -1,0 +1,6 @@
+Refference: Firebase _> Docs _> Develop_> Authentication-> WEb -> Mannage Users
+
+            const user = firebase.auth().currentUser
+            user.updateProfile({displayName:name, photoURL:"photo_url"})
+	.then(success=> success.message)
+	.catch(error=> error.message)

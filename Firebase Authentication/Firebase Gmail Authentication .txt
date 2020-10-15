@@ -1,0 +1,86 @@
+..........Simple Firebase gmail authenticaton Application.........
+Step 1: 
+	Got to firebase
+	Create Project
+	Enable or Skip Google Analytics
+	Select Application Type (Pick Web Application)
+
+Step 2: 
+	Install React: npx create-react-app firebase-auth
+	Install Firebase: npm install --save firebase
+
+Setp 3: 
+	Create js file & Store Config Data & Export Data.
+
+Step 4: 
+	// Firebase App (the core Firebase SDK) is always required and must be listed first
+	import * as firebase from "firebase/app"
+	
+	// Optional !  If you enabled Analytics in your project, add the Firebase SDK for Analytics
+	import "firebase/analytics"
+
+	// Add the Firebase products that you want to use
+	import "firebase/auth"
+
+	// Optional ! Add Firebase Store to Store site data in Firebase
+	import "firebase/firestore";
+
+Step 5: 
+	// Initialize Firebase outside method
+	firebase.initializeApp(firebaseConfig)
+
+	//Create an instance of the Google provider object inside method
+  	const provider = new firebase.auth.GoogleAuthProvider();
+
+Step 6: 
+	Firebase Data Stored in a State: 
+
+	//Declare a state to store user Data
+  		const [user, setUser] = useState({
+    					isSignIn: false,
+    					name:'',
+    					email:'',
+    					photo:''
+  					})
+Step 7:  Get Firebase Data & Store in State
+
+  const handleSignIn =()=>{
+    //FireBase Authentication Sign in ...
+    firebase.auth().signInWithPopup(provider)
+    .then(res=> {
+      const {displayName, email, photoURL} = res.user
+        const userData = {
+          isSignIn: true,
+          name: displayName,
+          email: email,
+          photo: photoURL
+        }
+        setUser(userData)
+
+      console.log(displayName, email, photoURL)
+    })
+  }
+
+Step 8: Sign out & Store Empty Data in State
+
+   const handleSignOut = () => {
+    //FireBase Authentication Sign Out ...
+    firebase.auth().signOut()
+    .then(res => {
+      const signOutData = {
+        isSignIn: false,
+        name:'',
+        email:'',
+        photo:''
+      }
+      setUser(signOutData)
+    })
+  }
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+             
+
+
+   //Function With Default Perameter.....
+          
+ function sum(num1, num2=10){
+                    return num1 + num2;
+                }
+                let result = sum(34,1);
+                console.log(result)
+
+ If you dont perameter when clled fucntion, will run with defult perameter.

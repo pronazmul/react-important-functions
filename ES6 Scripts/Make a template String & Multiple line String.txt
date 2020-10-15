@@ -1,0 +1,10 @@
+           
+ 	back Quote= ``;
+
+	 let name = "Nazmul Huda";
+            let age = 25;
+
+            let templete = `I am ${name} & I am ${age} years old`;
+
+            let multiple = `Hello, I am ${name} 
+            My age is ${age}`;

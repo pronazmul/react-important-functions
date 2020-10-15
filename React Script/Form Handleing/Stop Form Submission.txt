@@ -1,0 +1,4 @@
+ 
+//Stop Submission using: preventDefault() .......
+
+<input onClick={(event)=>event.preventDefault()} type='submit' value='Sign Up'></input>

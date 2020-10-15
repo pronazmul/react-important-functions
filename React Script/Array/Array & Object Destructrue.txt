@@ -1,0 +1,13 @@
+
+
+Destructrue an array: 
+		let array = ['Html', 'Css','php','Laravel'];
+		let [firstValue, secondOne] = array;
+		** firstValue will store Html, And SecondOne Will Store Css.
+
+Destructre An Object: 
+
+		let object = {name:"nazmul huda", age: 20, profession:"programmer"}
+		let {name, profession} = object
+		** name will store nazmul huda, profession will store programmer.
+		

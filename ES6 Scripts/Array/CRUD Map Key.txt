@@ -1,0 +1,23 @@
+
+let testMap = new Map();
+
+testMap.set('key1','Nazmul Huda')
+testMap.set('key2','Muhammod Ali')
+testMap.set('key3','Rashadul')
+testMap.set('key4','Bilred')
+testMap.set('key5','Nuhidul')
+testMap.set('key6','Abdus')
+
+console.log(testMap.values())
+console.log(testMap.keys())
+
+
+for (let myValues of testMap.values()){
+    console.log(myValues)
+}
+
+
+testMap.delete('key1');		//Delete Selected Value
+testMap.clear();		//Clear all value
+testMap.get('key1');		//Get Single Value
+testMap.has('key1');		// if has condition will go second Step.

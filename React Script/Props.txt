@@ -1,0 +1,37 @@
+.........Share Value Using Props................
+
+<Test name='Nazmul Huda'></Test>
+
+	
+.....Props in Functional Component..........
+import React from 'react'
+	function Test(props){
+    		return(<h1>Welcome Porgrammer {props.name} </h1>)
+
+export default Test
+
+.........Use Props in Class................
+import React,{Component} from 'react'
+	class Welcome extends Component{
+   		 render(){
+        		return (<h1>Greetings From Class {this.props.name}</h1>)
+    	
+	}
+export default Welcome
+
+........Props Desctucture..............
+
+Attrubute Setup in Component:  <Chield name='Nazmul' age=25 gender='male'/>
+
+Destructrue Way 1: 
+
+	function Test(props){
+		const {name, age, gender} = props
+    		return(<h1>Welcome Porgrammer {name} </h1>)
+			}
+
+Destructrue Way 2: 
+
+	function Test({name, age, gender}){
+    		return(<h1>Welcome Porgrammer {name} </h1>)
+			}

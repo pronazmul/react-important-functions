@@ -1,0 +1,17 @@
+why: 	Use Histroy Hooks is used to declare a route link functionally. 
+
+* Declare useHistroy() hook: 
+	const history = useHistroy()
+
+*Set a method to perform btn onClick & push a route to histroy hook:
+
+	const handleClick = id => {
+					history.push(`/url/${id}`)
+				  }
+
+* Set a button to call method & pass value: 
+
+	<button onClick={()=>handleClick(id)}> Click Here</button>
+
+
+

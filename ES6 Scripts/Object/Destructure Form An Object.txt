@@ -1,0 +1,25 @@
+     
+......Destructre single Value........
+   const student = {
+            name: "Nazmul Huda",
+            age: 25,
+            father: "Helal uddin",
+            skills:{
+                graphic:"PS & AI",
+                web: "HTML, CSS, JS, PHP, Laravel"
+            },
+            address: "Fulbaria, Mymensingh, Bangladesh"
+        }
+
+        let {web} = student.skills;
+
+       console.log(web);
+
+....Destructure multiple values & rest store in an object.......
+
+const obj = {name: 'sania Akter', relation: 'heart', age:20, gender:'female', height:5.5, width:45}
+
+const {name, relation, ...rest}= obj
+console.log(name);
+console.log(relation);
+console.log(rest);

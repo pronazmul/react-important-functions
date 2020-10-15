@@ -1,0 +1,38 @@
+Why: 		useReducer is usually preferable to useState when you have complex state logic that involves multiple 
+		sub-values or when the next state depends on the previous one.
+
+Structure:	const [state, dispatch] = useReducer(reduce, initialvalue)
+
+Defination: 	
+		state: Declared State Can use from it.
+		dispatch: An Action To dispatch.
+		reduce: This is the action parform process.
+		initialValue: firstly initialized value.
+
+Example: 
+
+
+import React, { useReducer } from 'react';
+let initialvalue = { count: 0 }
+const reduce = (state, action) => {
+    switch (action.type) {
+        case 'INCREMENT':
+            return { count: state.count + 1 }
+        case 'DECREMENT':
+            return { count: state.count - 1 }
+        default:
+            return state
+    }
+}
+const UseReducer = () => {
+    const [state, dispatch] = useReducer(reduce, initialvalue)
+    return (
+        <div className='jumbotron text-center'>
+            <h1 className='font-width-bold display-4'>This in use Reducer Page</h1>
+            <h3> Current Value: {state.count}</h3>
+            <button onClick ={()=>dispatch({type:'INCREMENT'})} className="btn btn-outline-success btn-lg">Increment</button>
+            <button onClick ={()=>dispatch({type:'DECREMENT'})} className="btn btn-outline-danger btn-lg">Decrement</button>
+        </div>
+    )
+}
+export default UseReducer

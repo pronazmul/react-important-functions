@@ -1,0 +1,3 @@
+Installation Command: 
+	npm install --save react-google-maps
+

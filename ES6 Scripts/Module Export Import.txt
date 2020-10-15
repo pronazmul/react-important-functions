@@ -1,0 +1,31 @@
+	
+Module Export Import......
+
+	Named: Module Export & Import By Same Name.
+	Default: Module Export & Import By Any Name. 
+
+Requirments: 
+	# Need Server Local or Live.
+
+Steps: 
+
+	#connect js file where you wanna import file eg: <script type="module" src="./bangladesh.js"></script>
+	# Named Export eg:
+			 let names = "nazmul , Billal , Sania";
+			 function test(){ console.log('I am a JavaScript Programmer'))}
+			 class chaina{ toys(){alert('super girl form china')}}
+			 export{names, test, china}
+	# Named Import eg:
+			 import{names, test, china} from './china.js';
+			 console.log(names);
+			 test();
+			 let obj = new china();
+			 obj.toys();
+
+	# Default Export eg:
+			 class chaina{ toys(){alert('super girl form china')}}
+			 export default china;
+	# Default Import eg:
+			 import russia from './china.js';
+			 let obj = new russia();
+			 obj.toys();

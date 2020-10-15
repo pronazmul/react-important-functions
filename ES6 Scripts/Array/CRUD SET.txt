@@ -1,0 +1,22 @@
+
+//Add Values in Set Object
+let  mySet = new Set()
+
+mySet.add('nazmul')
+mySet.add('sania')
+mySet.add('billal')
+mySet.add('lima')
+mySet.add('sania')
+mySet.add(23)
+
+console.log(mySet.values());
+
+
+for(let allValues of mySet.values()){
+    console.log(allValues);
+}
+
+mySet.clear();			//Clear all value
+mySet.delete('sania');		//Delete Selected Value
+mySet.has('sania');		//Retrun True Or False
+mySet.size;			//Return Set Length

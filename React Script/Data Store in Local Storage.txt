@@ -1,0 +1,25 @@
+
+Calculate Product id & Store in Local Storage:
+
+                const mannageCard= (selectedProduct)=>{
+                        const newCart = [...cart, selectedProduct]
+                        setCart(newCart)
+                        //Same Product Qualtity find out......
+                        const samePorduct = newCart.filter(pd=> pd.key === selectedProduct.key)
+                        const count = samePorduct.length
+                        addToDatabaseCart(selectedProduct.key, count)
+                        }
+
+Retrive From Storage & Set in a state: 
+
+    const [cart, setCart] = useState([])
+    
+    useEffect(()=>{
+        const savedData = getDatabaseCart()
+        const keys = Object.keys(savedData)
+        const cartProduct = keys.map(key=>{
+            const product = fakeData.find(pd => pd.key === key)
+            product.quantity = savedData[key]
+            return product
+        })
+        setCart(cartProduct)

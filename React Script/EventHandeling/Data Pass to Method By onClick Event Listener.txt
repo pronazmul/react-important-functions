@@ -1,0 +1,21 @@
+WE DO THE WHOLE PROCESS TO STOP AUTO EXECUTION BEFORE CLICK......
+
+One Way: 
+
+import React,{Component} from 'react'
+	class Welcome extends Component{
+		getAlert(a){
+					alert(a)
+				   }
+   		 render(){
+        		return (<h1>Greetings From Class</h1>
+			<button onClick={this.getAlert.bind(this,'Hello I am from param...')}ClassAlert</button>
+				)
+    		}
+	}
+export default Welcome
+
+
+Another Way: 
+
+<button onClick={()=>getAlert('Hello I am from param')}ClassAlert</button>

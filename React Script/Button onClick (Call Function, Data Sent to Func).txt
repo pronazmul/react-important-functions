@@ -1,0 +1,28 @@
+
+Only Call the Function: 
+
+		function getAlert(){alert('Alert From Functional Component')}
+
+    		<button onClick={getAlert}>Functional Alert</button>
+
+
+Data Sent to Function Way-1: 
+
+		getAlert(a){alert(a)}
+
+		<button onClick={getAlert.bind(this,'Hello I am from param...')}ClassAlert</button>
+	
+
+Data Sent to Function Way-2: 
+
+		getAlert(a){alert(a)}
+
+		<button onClick={()=> getAlert('Hello I am from param...')}ClassAlert</button>
+
+Receive Another Component fucntion Using Props & Parameter transfer to that Function: 
+
+		Transfer Function By Props: 
+			product.map(product=><Product product={product} mannageCard={mannageCard}></Product> )
+
+		Receive & Pass Param to that Fucntion: 
+			<button onClick={()=>props.mannageCard(props.product)} /> Add To Card</button>

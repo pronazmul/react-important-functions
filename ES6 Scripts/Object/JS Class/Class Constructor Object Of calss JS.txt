@@ -1,0 +1,12 @@
+
+class studentData{
+    constructor(id, name, age){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.school ="Al Helal Model School";
+     }
+}
+
+let student = new studentData(1, "Programmer Nazmul", 25);
+console.log(student);

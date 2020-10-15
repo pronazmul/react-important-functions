@@ -1,0 +1,26 @@
+//Catch The Specific Numbers of An Array Using array.map Function......
+
+const numbers = [10,20,30,40,50,60];
+const squereIt = numbers.map(x => x*x);
+console.log(squereIt);
+
+//Get same properties form object of an array using array.map funciton......
+      
+     const students = [
+            {id:01, name:"Programmer Nazmul"},
+            {id:02, name:"Designer Billal"},
+            {id:03, name:"Marketer Nazmul"}
+        ]
+
+        const stNames = students.map(s=>s.name);
+        console.log(stNames);
+
+//Array.filter (Return true elements of array with array)
+const numbers = [10,20,30,40,50,60];
+const bigger = numbers.filter(x => x >=30);
+console.log(bigger);
+
+//Array.find (Return specific true element)
+const numbers = [10,20,30,40,50,60];
+const bigger = numbers.find(x => x >30);
+console.log(bigger);

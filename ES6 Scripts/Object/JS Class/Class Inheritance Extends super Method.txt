@@ -1,0 +1,22 @@
+
+
+     class Parent{
+            constructor(){
+                this.father ="Al Helal";
+            }
+        }
+
+     class Chield extends Parent{
+            constructor(name){
+                super();
+                this.name = name;
+            }
+
+            fullName(){
+                return this.name +" "+this.father;
+            }
+        }
+
+      let student = new Chield("Programmer Nazmul");
+        console.log(student);
+        console.log(student.fullName());

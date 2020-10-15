@@ -1,0 +1,16 @@
+
+
+      
+      const students = {
+            name: "Nazmul Huda",
+            profession: "programmer",
+            skills:{
+                html:"hyper Text Markup Language",
+                Css: "casiding Syple Sheet"
+            },
+            friends:['Roxi','Sarif']
+        }
+     
+        for ( let prop in students){
+            console.log(prop," : ", students[prop])
+        }

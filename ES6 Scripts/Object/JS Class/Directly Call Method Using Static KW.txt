@@ -1,0 +1,12 @@
+
+                    class Parent{
+                        constructor(){
+                            this.father ="Al Helal";
+                            console.log(this.father)
+                        }
+                        static familyMembers(){
+                            console.log(" Programmer Nazmul Huda")
+                        }
+                    }
+
+                Parent.familyMembers();

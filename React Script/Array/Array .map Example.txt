@@ -1,0 +1,40 @@
+Declare Array object......
+
+  const products =[
+    {name:'Adobe Photoshop',price:'$200'},
+    {name:'After Effects', price:'$300'},
+    {name:'Premire Pro', price:'$500'}
+  ]
+
+Pass Object to Component (Using Array.Map).......
+Documnetation: Array map Accepts 3 Parameters
+
+	No1: Each elements of array.
+	No2: Index number of an array.
+	No3: Complete Array.
+	
+	{products.map(product =><ObjectPass product={product}></ObjectPass>)}
+
+Use Array Object Values in Component.....
+	
+const ObjectPass = (props) =>{
+
+        return(
+                <div>
+                     <div className='row my-5 mx-3'> 
+                        <div className='col-md-4'>
+                            <div className="card bg-secondary shadow-lg">
+                                <div className="card-body">
+                                        <h2 className="card-title text-center"> {props.product.name}</h2>
+                                        <h4 className="text-center">{props.product.price}</h4>
+                                        <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam iste obcaecati dicta blanditiis harum, deleniti corrupti dolor facilis vero.</p>
+                                        <button className="btn btn-success btn-block mx-auto">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        )
+}
+
+

@@ -1,0 +1,4 @@
+make a file in build folder without ext: _redirects
+
+
+Add Script in that file: 	/*	/index.html	200

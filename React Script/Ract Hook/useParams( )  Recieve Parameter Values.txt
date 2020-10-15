@@ -1,0 +1,8 @@
+* Dynamic Link & Route setup Page: 
+	1 Link setup: <Link to={'/product/'+key}>{name}</Link>
+	2 Link Setup: <Link to={`/product/'$(key)`}>{name}</Link>
+        Route Setup Before 404:<Route path='/product/:key'><SingleProduct></SingleProduct></Route>
+
+Dynamic Param Data Receive By useParams() hook:
+* Get Ky using Hooks: 
+ 	const {key} = useParams()

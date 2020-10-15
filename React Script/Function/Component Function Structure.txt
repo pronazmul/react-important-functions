@@ -1,0 +1,15 @@
+
+Componet Function Default Format: 
+
+import React from 'react'
+	function Test(){
+    		return(<h1>Welcome Porgrammer Nazmul Huda</h1>
+   			)}
+export default Test
+
+Use Component inside App.js: 
+	
+	import Test from './component/Test'
+	<Test></Test>
+
+

@@ -1,0 +1,65 @@
+GitHub
+Tools for Start Working: 
+	Git SCM: (Source Code Manager).
+	Go Git Hub and Create an Account.
+Create A Repository: 
+	Repository Name
+	Description (Optional)
+	Public (Simply Your Showoff Projects will Be Public).
+	Private (Your Clients Or company applications will be private).
+Repository First Time Commands: 
+	echo "# basic_project" >> README.md (Add Readme File)
+	git init (initialize Git)
+	git add  . (Add 
+	git commit -m "first commit"
+	git remote add origin https://github.com/nazmul-php/basic_project.git
+	git push -u origin master
+Check Changes Commands: 
+	git diff (enter & more Enter To Stop press q)
+ Git Push & Pull Commands: 
+	git add .
+	git commit -m“what you changed here”
+	git push
+	Pull (add others changes in your project):
+	Git pull
+Can Also Use Desktop Application: 
+	Why: To use GitHub from a Graphical User Interface, easy to understand.
+	Simply install & download GitHub desktop application in your pc. 
+	Create Repository Push/Pull Request on GitHub From Graphical Interface. 
+Branch in GitHub: 
+	Why: 
+We Create New Branch Simply why, When We Create Big application Then a developer team will work together, we will create branch to give developer specific work to a developer, after getting job we will create pull request to add individuals branched together. 
+Check Branch Commands: 
+	Git checkout -b branch-name “Create Branch”
+	Git checkout branch-name “Shift Branch”
+Branch Commands: 
+	Git branch “Current Running Branch”
+	Git branch -a “Show All Branch”
+	Git checkout -b branch-name “Create Branch”
+	Git push –set -upstream origin branch-name “Push New Created Branch”
+Git Clone (Command Promt): 
+	Why: Run In the exact position of folder path & Start Vs code easily.
+	Command: git clone clone_url;
+	VS Code Open command: code . (from exact folder location).
+	Problem: If URL Show Any Fatal Error Either Set URL inside Double quotes or remove s (secure). 
+Git Push Problem: 
+	Problem: Remote Origin Already Exist.
+	Problem: fatal: remote origin already exists.
+	Solution: $ git remote rm origin
+
+Push Anothre Problem: 
+	Error Code: fatal: 	No configured push destination.
+			Either specify the URL from the command-line or configure a remote repository using
+   			git remote add <name> <url>
+			and then push using the remote name
+			git push <name>
+	Why : Command Line Could'nt get the exact origin....
+	Solution: 
+		* 	$ git remote add origin https://bla...bla...bla...
+		* 	
+
+
+Clone React Porject or such project who's depends on node_modules: 
+	Git Clone Command:	--------
+	Install NPM for Node_modules: npm install.
+

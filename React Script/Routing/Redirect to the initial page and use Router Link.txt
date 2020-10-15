@@ -1,0 +1,32 @@
+
+##Make PrivateRoute Component First.
+	
+Setup Route: 
+
+const PrivateRoute = ({children, ...rest}) => {
+    const [SignInUser, setSignInUser] = useContext(contexUser)
+    return (
+        <Route
+        {...rest}
+        render={({ location }) =>
+          SignInUser.email ? (
+            children
+          ) : (
+            <Redirect
+              to={{
+                pathname: "/login",
+                state: { from: location }
+              }}
+            />
+          )
+        }
+      />
+    );
+}
+
+
+Use Private Route in Switch: 
+
+              <PrivateRoute path='/inventory'>
+                <Inventory></Inventory>
+              </PrivateRoute>
