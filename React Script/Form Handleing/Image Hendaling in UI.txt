@@ -1,0 +1,39 @@
+//Make A Form First: 
+
+<form onSubmit={handleForm}>
+            <div className="row">
+                    <div className="col-md-6">
+                        <input onBlur={handleBlur} name='title' className='form-control' placeholder='Enter Title' type="text" required />
+                        <textarea  onBlur={handleBlur} name='description' className="form-control mt-3" placeholder="Enter Description" rows="4" required></textarea>
+                    </div>
+                    <div className="col-md-6">
+                        <input onChange={handleFile} className='form-control' type="file" required/>
+                    </div>
+                    <input type='submit' value='Add New Service' className='ml-3 btn btn-outline-dark mt-3' />
+            </div>
+        </form>
+
+//Make Two State one is for data & another for file: 
+
+    const [info, setInfo] = useState({})
+    const [file, setFile] = useState(null)
+
+//Make Handle Blur for getting From data
+
+    const handleBlur = (e) =>{
+            let newData = {...info}
+            newData[e.target.name]=e.target.value
+            setInfo(newData)
+    }
+
+//Make Handle Change For Getting  File Data
+    const handleFile =(e) =>{
+        const image = e.target.files[0]
+        setFile(image)
+    }
+
+//Mannage Form Submit
+
+    const handleForm = (e) => {
+        e.preventDefault()
+        }

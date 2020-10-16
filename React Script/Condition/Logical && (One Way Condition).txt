@@ -17,3 +17,8 @@ Conditional Div:
                         <img src={user.photo} alt=''/>
                       </div>
       }
+
+
+     		{Component === 'serviceStatus' && <h4>Service Status</h4>}
+                           	{Component === 'addService' && <h4>Add New Service</h4>}
+                            	{Component === 'makeAdmin' && <h4>Make Admin</h4>} 
