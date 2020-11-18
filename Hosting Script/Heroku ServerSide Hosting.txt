@@ -22,6 +22,8 @@ Fix Errors:
 
 	i) Setup Env: Setting > Config Vars > key & Value Setup.
 
+	VS Code Replace All: Ctrl + Shift + R
+
 Update: 
 
 	* Cmd: git add .

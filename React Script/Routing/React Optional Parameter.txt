@@ -1,0 +1,8 @@
+
+
+
+
+		<Route path='/dashboard/:key?'>
+                       	 	<Dashboard></Dashboard>
+                    	</Route>
+

@@ -1,0 +1,7 @@
+			REACT-TOST-NOTIFICATION
+Support Site: https://jossmac.github.io/react-toast-notifications
+
+Installation Command: npm install --save react-toast-notifications
+
+
+

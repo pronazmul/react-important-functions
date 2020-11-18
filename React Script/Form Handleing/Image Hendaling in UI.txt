@@ -37,3 +37,39 @@
     const handleForm = (e) => {
         e.preventDefault()
         }
+
+//RECEIVE & Store image in NODE Directory.....
+
+app.post('/addService',(req,res)=>{
+        const image = req.files.image
+
+        image.mv(`${__dirname}/images/${image.name}`, err=>{
+            if(err){
+                return res.send("Image Upload Failed")
+            }else{
+                return res.send("Image Upload Success")
+            }
+        })     
+    })
+
+//RECEIVE & Store image in MONGO DB as 'base64'
+
+File System Packege: 
+		npm install fs-extra
+Import FS Packege : 
+		const fs = require('fs-extra')
+Use FS Packege: 
+		
+ app.post('/addService',(req,res)=>{
+        const image = req.files.image
+
+        image.mv(`${__dirname}/images/${image.name}`, err=>{
+            if(err){
+                return res.send("Image Upload Failed")
+            }else{
+                return res.send("Image Upload Success")
+            }
+        })       
+    })
+
+

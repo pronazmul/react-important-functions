@@ -1,0 +1,9 @@
+ERROR: Firebase App named '[DEFAULT]' already exists (app/duplicate-app) [duplicate]
+Solotion: 
+export const initializeFirebase = () => {
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig)
+     }
+}
+
+

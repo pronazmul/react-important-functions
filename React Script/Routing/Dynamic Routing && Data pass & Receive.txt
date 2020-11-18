@@ -13,3 +13,5 @@
 
 * Array.find() on total Data to get Specific Object: 
     const product = fakeData.find(pd=> pd.key=== key)
+
+

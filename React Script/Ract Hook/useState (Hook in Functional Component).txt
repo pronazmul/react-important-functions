@@ -4,21 +4,16 @@ You pass the initial state to this function, and it returns a variable with the 
 (not necessarily the initial state) and another function to update this value.
 
 
-import React,{useState} from 'react'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
 function StateComponent(){
-
-    const [count, getCount] = useState(10)
+    const [count, getCount] = useState(0)
 
     return(
-        <div className='jumbotron'>
+        <>
             <h2>Count: {count}</h2>
-            <button className='btn btn-danger mr-3' onClick={()=>getCount(count-1)}>Decrease</button>
-            <button className='btn btn-success' onClick={()=>getCount(count+1)}>Increase</button>
-        </div>
+            <button' onClick={()=>getCount(count-1)}>Decrease</button>
+            <button onClick={()=>getCount(count+1)}>Increase</button>
+        </>
     )
-
 }
 export default StateComponent
 

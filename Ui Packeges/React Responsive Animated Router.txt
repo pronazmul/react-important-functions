@@ -1,0 +1,4 @@
+Source: https://www.npmjs.com/package/react-responsive-animate-navbar
+command: npm install --save react-responsive-animate-navbar
+
+
